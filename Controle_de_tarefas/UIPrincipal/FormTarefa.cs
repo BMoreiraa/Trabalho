@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +24,11 @@ namespace UIPrincipal
            
         }
 
-       
-        
+        private void buttonBuacar_Click(object sender, EventArgs e)
+        {
+            TarefaBLL tarefaBLL = new TarefaBLL();
+            tarefaBindingSource.DataSource = tarefaBLL.Buscar(textBoxBuscar.Text);
+
+        }
     }
 }

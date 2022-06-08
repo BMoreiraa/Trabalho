@@ -38,7 +38,7 @@ namespace UIPrincipal
             this.buttonAdicionar = new System.Windows.Forms.Button();
             this.buttonBuacar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -105,6 +105,7 @@ namespace UIPrincipal
             this.buttonBuacar.TabIndex = 3;
             this.buttonBuacar.Text = "Buscar";
             this.buttonBuacar.UseVisualStyleBackColor = true;
+            this.buttonBuacar.Click += new System.EventHandler(this.buttonBuacar_Click);
             // 
             // buttonExcluir
             // 
@@ -115,13 +116,13 @@ namespace UIPrincipal
             this.buttonExcluir.Text = "Excluir";
             this.buttonExcluir.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxBuscar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(646, 26);
-            this.textBox1.TabIndex = 5;
+            this.textBoxBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBuscar.Location = new System.Drawing.Point(12, 54);
+            this.textBoxBuscar.Name = "textBoxBuscar";
+            this.textBoxBuscar.Size = new System.Drawing.Size(646, 26);
+            this.textBoxBuscar.TabIndex = 5;
             // 
             // FormTarefa
             // 
@@ -129,7 +130,7 @@ namespace UIPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(776, 543);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxBuscar);
             this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.buttonBuacar);
             this.Controls.Add(this.buttonAdicionar);
@@ -157,6 +158,6 @@ namespace UIPrincipal
         private System.Windows.Forms.Button buttonAdicionar;
         private System.Windows.Forms.Button buttonBuacar;
         private System.Windows.Forms.Button buttonExcluir;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxBuscar;
     }
 }
