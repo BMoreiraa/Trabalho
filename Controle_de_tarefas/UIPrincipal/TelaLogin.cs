@@ -66,6 +66,8 @@ namespace UIPrincipal
                 TXTBSenha.Text = "";
                 TXTBSenha.Focus();
             }
+
+            Close();
         }
         
     }

@@ -30,5 +30,14 @@ namespace UIPrincipal
             tarefaBindingSource.DataSource = tarefaBLL.Buscar(textBoxBuscar.Text);
 
         }
+
+        
+
+        private void buttonAdicionar_Click_1(object sender, EventArgs e)
+        {
+            CadastroTarefa frm = new CadastroTarefa();
+            frm.ShowDialog();
+
+        }
     }
 }

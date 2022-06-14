@@ -5,8 +5,8 @@ namespace MODEL
     {
         private int id;
         private int id_Usuario;
-        private int descricao;
-        private int estatus;
+        private string descricao;
+        private string estatus;
 
         public int Id
         {
@@ -21,13 +21,13 @@ namespace MODEL
             set { id_Usuario = value; }
         }
 
-        public int Descricao
+        public string Descricao
         {
             get { return descricao; }
             set { descricao = value; }
         }
 
-        public int Estatus
+        public string Estatus
         {
             get { return estatus; }
             set { estatus = value; }

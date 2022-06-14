@@ -39,6 +39,8 @@ namespace UIPrincipal
             this.buttonBuacar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -49,16 +51,18 @@ namespace UIPrincipal
             this.tarefaDataGridView.AllowUserToDeleteRows = false;
             this.tarefaDataGridView.AllowUserToOrderColumns = true;
             this.tarefaDataGridView.AutoGenerateColumns = false;
+            this.tarefaDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.tarefaDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tarefaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tarefaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.tarefaDataGridView.DataSource = this.tarefaBindingSource;
-            this.tarefaDataGridView.Location = new System.Drawing.Point(12, 93);
+            this.tarefaDataGridView.Location = new System.Drawing.Point(12, 134);
             this.tarefaDataGridView.Name = "tarefaDataGridView";
             this.tarefaDataGridView.ReadOnly = true;
-            this.tarefaDataGridView.Size = new System.Drawing.Size(744, 392);
+            this.tarefaDataGridView.Size = new System.Drawing.Size(744, 351);
             this.tarefaDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -90,16 +94,25 @@ namespace UIPrincipal
             // 
             // buttonAdicionar
             // 
+            this.buttonAdicionar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdicionar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdicionar.ForeColor = System.Drawing.Color.Fuchsia;
             this.buttonAdicionar.Location = new System.Drawing.Point(12, 491);
             this.buttonAdicionar.Name = "buttonAdicionar";
             this.buttonAdicionar.Size = new System.Drawing.Size(124, 34);
             this.buttonAdicionar.TabIndex = 2;
-            this.buttonAdicionar.Text = "Adicionar";
+            this.buttonAdicionar.Text = "Nova Tarefa";
             this.buttonAdicionar.UseVisualStyleBackColor = true;
+            this.buttonAdicionar.Click += new System.EventHandler(this.buttonAdicionar_Click_1);
             // 
             // buttonBuacar
             // 
-            this.buttonBuacar.Location = new System.Drawing.Point(678, 54);
+            this.buttonBuacar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonBuacar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuacar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuacar.ForeColor = System.Drawing.Color.Fuchsia;
+            this.buttonBuacar.Location = new System.Drawing.Point(678, 98);
             this.buttonBuacar.Name = "buttonBuacar";
             this.buttonBuacar.Size = new System.Drawing.Size(78, 28);
             this.buttonBuacar.TabIndex = 3;
@@ -109,6 +122,10 @@ namespace UIPrincipal
             // 
             // buttonExcluir
             // 
+            this.buttonExcluir.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExcluir.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExcluir.ForeColor = System.Drawing.Color.Fuchsia;
             this.buttonExcluir.Location = new System.Drawing.Point(632, 491);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(124, 34);
@@ -119,10 +136,34 @@ namespace UIPrincipal
             // textBoxBuscar
             // 
             this.textBoxBuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBuscar.Location = new System.Drawing.Point(12, 54);
+            this.textBoxBuscar.Location = new System.Drawing.Point(12, 98);
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(646, 26);
             this.textBoxBuscar.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Fuchsia;
+            this.button1.Location = new System.Drawing.Point(153, 491);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 34);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Comentario";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Fuchsia;
+            this.label1.Location = new System.Drawing.Point(182, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(485, 72);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Lista de Tarefas";
             // 
             // FormTarefa
             // 
@@ -130,16 +171,18 @@ namespace UIPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(776, 543);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxBuscar);
             this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.buttonBuacar);
             this.Controls.Add(this.buttonAdicionar);
             this.Controls.Add(this.tarefaDataGridView);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormTarefa";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Controle de Tarefas";
             this.Load += new System.EventHandler(this.FormTarefa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarefaDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaBindingSource)).EndInit();
@@ -159,5 +202,7 @@ namespace UIPrincipal
         private System.Windows.Forms.Button buttonBuacar;
         private System.Windows.Forms.Button buttonExcluir;
         private System.Windows.Forms.TextBox textBoxBuscar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
