@@ -39,5 +39,19 @@ namespace UIPrincipal
             frm.ShowDialog();
 
         }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Dejesa realmete excluir", "atenção", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+            TarefaBLL tarefaBLL = new TarefaBLL();
+
+            int id;
+
+            id = Convert.ToInt32(((DataRowView)tarefaBindingSource.Current).Row["Id"]);
+            tarefaBLL.Excluir(id);
+            tarefaBindingSource.RemoveCurrent();
+            MessageBox.Show("Registro excluido com sucesso!");
+        }
     }
 }

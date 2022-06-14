@@ -23,5 +23,11 @@ namespace BLL
             TarefaDAL tarefaDAL = new TarefaDAL();
             return tarefaDAL.Alterar(_tarefa);
         }
+
+        public void Excluir(int _ID)
+        {
+            TarefaDAL tarefaDAL = new TarefaDAL();
+            tarefaDAL.Excluir(_ID);
+        }
     }
 }
