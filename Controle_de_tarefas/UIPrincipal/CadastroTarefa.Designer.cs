@@ -34,7 +34,6 @@ namespace UIPrincipal
             this.label_IdUsuario = new System.Windows.Forms.Label();
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
             this.labelDescricao = new System.Windows.Forms.Label();
-            this.textBoxEstatus = new System.Windows.Forms.TextBox();
             this.labelEstatus = new System.Windows.Forms.Label();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -78,7 +77,7 @@ namespace UIPrincipal
             this.textBoxDescricao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxDescricao.Multiline = true;
             this.textBoxDescricao.Name = "textBoxDescricao";
-            this.textBoxDescricao.Size = new System.Drawing.Size(599, 50);
+            this.textBoxDescricao.Size = new System.Drawing.Size(599, 67);
             this.textBoxDescricao.TabIndex = 3;
             // 
             // labelDescricao
@@ -91,18 +90,10 @@ namespace UIPrincipal
             this.labelDescricao.TabIndex = 2;
             this.labelDescricao.Text = "Descrição";
             // 
-            // textBoxEstatus
-            // 
-            this.textBoxEstatus.Location = new System.Drawing.Point(40, 322);
-            this.textBoxEstatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxEstatus.Name = "textBoxEstatus";
-            this.textBoxEstatus.Size = new System.Drawing.Size(132, 25);
-            this.textBoxEstatus.TabIndex = 5;
-            // 
             // labelEstatus
             // 
             this.labelEstatus.AutoSize = true;
-            this.labelEstatus.Location = new System.Drawing.Point(36, 301);
+            this.labelEstatus.Location = new System.Drawing.Point(37, 312);
             this.labelEstatus.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEstatus.Name = "labelEstatus";
             this.labelEstatus.Size = new System.Drawing.Size(58, 17);
@@ -144,7 +135,7 @@ namespace UIPrincipal
             this.comboBoxUsuario.Location = new System.Drawing.Point(219, 162);
             this.comboBoxUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxUsuario.Name = "comboBoxUsuario";
-            this.comboBoxUsuario.Size = new System.Drawing.Size(420, 25);
+            this.comboBoxUsuario.Size = new System.Drawing.Size(274, 25);
             this.comboBoxUsuario.TabIndex = 10;
             // 
             // comboBoxESTATUS
@@ -155,7 +146,7 @@ namespace UIPrincipal
             this.comboBoxESTATUS.Items.AddRange(new object[] {
             "COMPLETO",
             "NÃO COMPETO"});
-            this.comboBoxESTATUS.Location = new System.Drawing.Point(180, 322);
+            this.comboBoxESTATUS.Location = new System.Drawing.Point(40, 333);
             this.comboBoxESTATUS.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxESTATUS.Name = "comboBoxESTATUS";
             this.comboBoxESTATUS.Size = new System.Drawing.Size(198, 25);
@@ -171,7 +162,6 @@ namespace UIPrincipal
             this.Controls.Add(this.comboBoxUsuario);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.textBoxEstatus);
             this.Controls.Add(this.labelEstatus);
             this.Controls.Add(this.textBoxDescricao);
             this.Controls.Add(this.labelDescricao);
@@ -196,7 +186,6 @@ namespace UIPrincipal
         private System.Windows.Forms.Label label_IdUsuario;
         private System.Windows.Forms.TextBox textBoxDescricao;
         private System.Windows.Forms.Label labelDescricao;
-        private System.Windows.Forms.TextBox textBoxEstatus;
         private System.Windows.Forms.Label labelEstatus;
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Label label1;

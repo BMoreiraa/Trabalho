@@ -52,6 +52,12 @@
     <Compile Include="CadastroTarefa.Designer.cs">
       <DependentUpon>CadastroTarefa.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormComentario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComentario.Designer.cs">
+      <DependentUpon>FormComentario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTarefa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CadastroTarefa.resx">
       <DependentUpon>CadastroTarefa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComentario.resx">
+      <DependentUpon>FormComentario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTarefa.resx">
       <DependentUpon>FormTarefa.cs</DependentUpon>

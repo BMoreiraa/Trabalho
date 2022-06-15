@@ -43,6 +43,7 @@ namespace UIPrincipal
             tarefa.Descricao = textBoxDescricao.Text;
             tarefa.Estatus = comboBoxESTATUS.SelectedItem.ToString();
 
+
             tarefaBLL.Inserir(tarefa);
 
         }

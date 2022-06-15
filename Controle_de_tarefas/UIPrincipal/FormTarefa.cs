@@ -53,5 +53,11 @@ namespace UIPrincipal
             tarefaBindingSource.RemoveCurrent();
             MessageBox.Show("Registro excluido com sucesso!");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormComentario frm = new FormComentario();
+            frm.ShowDialog();
+        }
     }
 }
