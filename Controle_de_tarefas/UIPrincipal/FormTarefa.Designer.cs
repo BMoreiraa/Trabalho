@@ -62,8 +62,8 @@ namespace UIPrincipal
             this.tarefaDataGridView.Location = new System.Drawing.Point(12, 134);
             this.tarefaDataGridView.Name = "tarefaDataGridView";
             this.tarefaDataGridView.ReadOnly = true;
-            this.tarefaDataGridView.Size = new System.Drawing.Size(744, 351);
-            this.tarefaDataGridView.TabIndex = 1;
+            this.tarefaDataGridView.Size = new System.Drawing.Size(744, 342);
+            this.tarefaDataGridView.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -115,7 +115,7 @@ namespace UIPrincipal
             this.buttonBuacar.Location = new System.Drawing.Point(678, 98);
             this.buttonBuacar.Name = "buttonBuacar";
             this.buttonBuacar.Size = new System.Drawing.Size(78, 28);
-            this.buttonBuacar.TabIndex = 3;
+            this.buttonBuacar.TabIndex = 1;
             this.buttonBuacar.Text = "Buscar";
             this.buttonBuacar.UseVisualStyleBackColor = true;
             this.buttonBuacar.Click += new System.EventHandler(this.buttonBuacar_Click);
@@ -140,7 +140,7 @@ namespace UIPrincipal
             this.textBoxBuscar.Location = new System.Drawing.Point(12, 98);
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(646, 26);
-            this.textBoxBuscar.TabIndex = 5;
+            this.textBoxBuscar.TabIndex = 0;
             // 
             // button1
             // 
@@ -151,7 +151,7 @@ namespace UIPrincipal
             this.button1.Location = new System.Drawing.Point(153, 491);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 34);
-            this.button1.TabIndex = 6;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Comentario";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -163,7 +163,7 @@ namespace UIPrincipal
             this.label1.Location = new System.Drawing.Point(182, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(485, 72);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 6;
             this.label1.Text = "Lista de Tarefas";
             // 
             // FormTarefa

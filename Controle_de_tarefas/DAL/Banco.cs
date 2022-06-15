@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -6,27 +6,28 @@ namespace DAL
 {
     public class Banco
     {
-        readonly SqlTransaction t = null;
-        readonly SqlConnection cn = null;
-
-        public Banco()
+        public static DataTable dql (string sql)
         {
-            t = cn.BeginTransaction(IsolationLevel.Serializable);
-            cn = new SqlConnection("");
-        }
-        public bool ExcutarComando(List<ComandoSQL> _cmd)
-        {
-            foreach (var item in _cmd)
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
             {
-                item.Comando.Transaction = t;
-                foreach (var p in item.Parametros)
-                {
-                    item.Comando.Parameters.AddWithValue(p.Parametro, p.Valor);
-                }
-                item.Comando.ExecuteNonQuery();
+                SqlConnection cn = new SqlConnection();
+
+                cn.ConnectionString = Conexao.ConexaoBanco;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = sql;
+                da = new SqlDataAdapter(cmd.CommandText, cn);
+                da.Fill(dt);
+                cn.Close();
+                return dt;
             }
-            t.Commit();
-            return true;
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
 
         }
     }

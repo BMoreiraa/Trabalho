@@ -105,6 +105,10 @@
       <Project>{e195ee91-b82d-4b78-b580-b93da5b70319}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{b50081ba-d911-4be9-8bb6-52b476174171}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MODEL\MODEL.csproj">
       <Project>{e0de3a85-ed58-4df3-92b6-d22929586008}</Project>
       <Name>MODEL</Name>

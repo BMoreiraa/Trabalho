@@ -1,6 +1,8 @@
 ﻿using BLL;
+using DAL;
 using MODEL;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace UIPrincipal
@@ -37,13 +39,29 @@ namespace UIPrincipal
             Tarefa tarefa = new Tarefa();
 
             tarefa.Id = Convert.ToInt32(textBoxID.Text);
-            tarefa.Id_Usuario = Convert.ToInt32(textBoxIDUsuario.Text);
+            tarefa.Id_Usuario = Convert.ToInt32(comboBoxUsuario.SelectedValue.ToString());
             tarefa.Descricao = textBoxDescricao.Text;
-            tarefa.Estatus = textBoxEstatus.Text;
+            tarefa.Estatus = comboBoxESTATUS.SelectedItem.ToString();
 
             tarefaBLL.Inserir(tarefa);
 
         }
 
+        private void retornarUsuario()
+        {
+            String vqueryUsuarios =  @"SELECT Id, Nome FROM Usuario order by Id";
+
+            comboBoxUsuario.Items.Clear();
+            comboBoxUsuario.DataSource = Banco.dql(vqueryUsuarios);
+            comboBoxUsuario.DisplayMember = "Nome";
+            comboBoxUsuario.ValueMember = "Id";
+
+
+        }
+
+        private void CadastroTarefa_Load(object sender, EventArgs e)
+        {
+            retornarUsuario();
+        }
     }
 }

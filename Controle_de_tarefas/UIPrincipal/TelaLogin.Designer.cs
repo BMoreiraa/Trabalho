@@ -63,7 +63,7 @@ namespace UIPrincipal
             this.panelFundo.Location = new System.Drawing.Point(0, 0);
             this.panelFundo.Name = "panelFundo";
             this.panelFundo.Size = new System.Drawing.Size(365, 561);
-            this.panelFundo.TabIndex = 3;
+            this.panelFundo.TabIndex = 0;
             // 
             // linkLabelNovoCadastro
             // 
@@ -73,7 +73,7 @@ namespace UIPrincipal
             this.linkLabelNovoCadastro.Location = new System.Drawing.Point(138, 510);
             this.linkLabelNovoCadastro.Name = "linkLabelNovoCadastro";
             this.linkLabelNovoCadastro.Size = new System.Drawing.Size(98, 16);
-            this.linkLabelNovoCadastro.TabIndex = 12;
+            this.linkLabelNovoCadastro.TabIndex = 8;
             this.linkLabelNovoCadastro.TabStop = true;
             this.linkLabelNovoCadastro.Text = "Criar um Conta!";
             // 
@@ -85,7 +85,7 @@ namespace UIPrincipal
             this.label3.Location = new System.Drawing.Point(71, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(222, 42);
-            this.label3.TabIndex = 11;
+            this.label3.TabIndex = 9;
             this.label3.Text = "Tela de login";
             // 
             // label2
@@ -97,7 +97,7 @@ namespace UIPrincipal
             this.label2.Location = new System.Drawing.Point(119, 487);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 16);
-            this.label2.TabIndex = 10;
+            this.label2.TabIndex = 7;
             this.label2.Text = "Não tem uma Conta?";
             // 
             // checkBoxMostraSenha
@@ -109,7 +109,7 @@ namespace UIPrincipal
             this.checkBoxMostraSenha.Location = new System.Drawing.Point(201, 286);
             this.checkBoxMostraSenha.Name = "checkBoxMostraSenha";
             this.checkBoxMostraSenha.Size = new System.Drawing.Size(118, 22);
-            this.checkBoxMostraSenha.TabIndex = 9;
+            this.checkBoxMostraSenha.TabIndex = 6;
             this.checkBoxMostraSenha.Text = "Mostra senha";
             this.checkBoxMostraSenha.UseVisualStyleBackColor = true;
             this.checkBoxMostraSenha.CheckedChanged += new System.EventHandler(this.checkBoxMostraSenha_CheckedChanged);
@@ -123,7 +123,7 @@ namespace UIPrincipal
             this.buttonSAIR.Location = new System.Drawing.Point(115, 435);
             this.buttonSAIR.Name = "buttonSAIR";
             this.buttonSAIR.Size = new System.Drawing.Size(148, 34);
-            this.buttonSAIR.TabIndex = 7;
+            this.buttonSAIR.TabIndex = 5;
             this.buttonSAIR.Text = "&Sair";
             this.buttonSAIR.UseVisualStyleBackColor = true;
             this.buttonSAIR.Click += new System.EventHandler(this.buttonSAIR_Click);
@@ -138,7 +138,7 @@ namespace UIPrincipal
             this.BTTLogin.Location = new System.Drawing.Point(115, 391);
             this.BTTLogin.Name = "BTTLogin";
             this.BTTLogin.Size = new System.Drawing.Size(148, 36);
-            this.BTTLogin.TabIndex = 6;
+            this.BTTLogin.TabIndex = 4;
             this.BTTLogin.Text = "&Login";
             this.BTTLogin.UseVisualStyleBackColor = false;
             this.BTTLogin.Click += new System.EventHandler(this.BTTLogin_Click);
@@ -151,7 +151,7 @@ namespace UIPrincipal
             this.TXTBSenha.Name = "TXTBSenha";
             this.TXTBSenha.PasswordChar = '*';
             this.TXTBSenha.Size = new System.Drawing.Size(265, 26);
-            this.TXTBSenha.TabIndex = 5;
+            this.TXTBSenha.TabIndex = 3;
             // 
             // LBSenha
             // 
@@ -162,7 +162,7 @@ namespace UIPrincipal
             this.LBSenha.Location = new System.Drawing.Point(45, 227);
             this.LBSenha.Name = "LBSenha";
             this.LBSenha.Size = new System.Drawing.Size(53, 18);
-            this.LBSenha.TabIndex = 4;
+            this.LBSenha.TabIndex = 2;
             this.LBSenha.Text = "Senha";
             // 
             // TXTBUsuario
@@ -171,7 +171,7 @@ namespace UIPrincipal
             this.TXTBUsuario.Location = new System.Drawing.Point(49, 182);
             this.TXTBUsuario.Name = "TXTBUsuario";
             this.TXTBUsuario.Size = new System.Drawing.Size(265, 26);
-            this.TXTBUsuario.TabIndex = 3;
+            this.TXTBUsuario.TabIndex = 1;
             // 
             // LBUsuario
             // 
@@ -182,7 +182,7 @@ namespace UIPrincipal
             this.LBUsuario.Location = new System.Drawing.Point(46, 161);
             this.LBUsuario.Name = "LBUsuario";
             this.LBUsuario.Size = new System.Drawing.Size(62, 18);
-            this.LBUsuario.TabIndex = 2;
+            this.LBUsuario.TabIndex = 0;
             this.LBUsuario.Text = "Usuario";
             // 
             // TelaLogin
