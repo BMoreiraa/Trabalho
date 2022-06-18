@@ -60,7 +60,7 @@ namespace UIPrincipal
             comboBoxTarefa.Items.Clear();
             comboBoxTarefa.DataSource = Banco.dql(banco.vqueryTarefas);
             comboBoxTarefa.DisplayMember = "Descriçao";
-            comboBoxTarefa.ValueMember = "Id";
+            
 
         }
 
