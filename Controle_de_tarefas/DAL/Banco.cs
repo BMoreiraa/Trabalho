@@ -6,6 +6,10 @@ namespace DAL
 {
     public class Banco
     {
+
+        public string vqueryUsuarios = @"SELECT Id, Nome FROM Usuario order by Id";
+        public string vqueryTarefas = @"SELECT Descricao FROM Tarefa order by Id";
+
         public static DataTable dql (string sql)
         {
             SqlDataAdapter da = null;

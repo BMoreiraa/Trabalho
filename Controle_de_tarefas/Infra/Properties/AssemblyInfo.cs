@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ParametosSQL")]
+[assembly: AssemblyTitle("Infra")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ParametosSQL")]
+[assembly: AssemblyProduct("Infra")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("42faa19e-7899-41e7-aa72-52f9d2479469")]
+[assembly: Guid("79995ff2-8fbe-4e45-8fb5-c8fa6a1d0220")]
 
 // Version information for an assembly consists of the following four values:
 //

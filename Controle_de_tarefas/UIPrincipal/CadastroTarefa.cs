@@ -50,19 +50,21 @@ namespace UIPrincipal
 
         private void retornarUsuario()
         {
-            String vqueryUsuarios =  @"SELECT Id, Nome FROM Usuario order by Id";
-
+            Banco banco = new Banco();
             comboBoxUsuario.Items.Clear();
-            comboBoxUsuario.DataSource = Banco.dql(vqueryUsuarios);
+            comboBoxUsuario.DataSource = Banco.dql(banco.vqueryUsuarios);
             comboBoxUsuario.DisplayMember = "Nome";
             comboBoxUsuario.ValueMember = "Id";
 
-
         }
+
+  
+
 
         private void CadastroTarefa_Load(object sender, EventArgs e)
         {
             retornarUsuario();
+           
         }
     }
 }

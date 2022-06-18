@@ -31,14 +31,14 @@ namespace UIPrincipal
         {
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelUsuario = new System.Windows.Forms.Label();
-            this.labelTarefa = new System.Windows.Forms.Label();
-            this.textBoxDescrição = new System.Windows.Forms.TextBox();
-            this.labelDescrição = new System.Windows.Forms.Label();
+            this.comboBoxUsuario = new System.Windows.Forms.ComboBox();
+            this.comboBoxTarefa = new System.Windows.Forms.ComboBox();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
-            this.comboBoxTarefa = new System.Windows.Forms.ComboBox();
-            this.comboBoxUsuario = new System.Windows.Forms.ComboBox();
+            this.labelDescrição = new System.Windows.Forms.Label();
+            this.textBoxDescrição = new System.Windows.Forms.TextBox();
+            this.labelUsuario = new System.Windows.Forms.Label();
+            this.labelTarefa = new System.Windows.Forms.Label();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -71,44 +71,23 @@ namespace UIPrincipal
             this.panel1.Size = new System.Drawing.Size(587, 301);
             this.panel1.TabIndex = 11;
             // 
-            // labelUsuario
+            // comboBoxUsuario
             // 
-            this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Location = new System.Drawing.Point(399, 52);
-            this.labelUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(62, 18);
-            this.labelUsuario.TabIndex = 15;
-            this.labelUsuario.Text = "Usuário";
+            this.comboBoxUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxUsuario.FormattingEnabled = true;
+            this.comboBoxUsuario.Location = new System.Drawing.Point(402, 84);
+            this.comboBoxUsuario.Name = "comboBoxUsuario";
+            this.comboBoxUsuario.Size = new System.Drawing.Size(167, 26);
+            this.comboBoxUsuario.TabIndex = 22;
             // 
-            // labelTarefa
+            // comboBoxTarefa
             // 
-            this.labelTarefa.AutoSize = true;
-            this.labelTarefa.Location = new System.Drawing.Point(197, 52);
-            this.labelTarefa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelTarefa.Name = "labelTarefa";
-            this.labelTarefa.Size = new System.Drawing.Size(51, 18);
-            this.labelTarefa.TabIndex = 13;
-            this.labelTarefa.Text = "Tarefa";
-            // 
-            // textBoxDescrição
-            // 
-            this.textBoxDescrição.Location = new System.Drawing.Point(23, 168);
-            this.textBoxDescrição.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxDescrição.Multiline = true;
-            this.textBoxDescrição.Name = "textBoxDescrição";
-            this.textBoxDescrição.Size = new System.Drawing.Size(546, 69);
-            this.textBoxDescrição.TabIndex = 17;
-            // 
-            // labelDescrição
-            // 
-            this.labelDescrição.AutoSize = true;
-            this.labelDescrição.Location = new System.Drawing.Point(20, 136);
-            this.labelDescrição.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelDescrição.Name = "labelDescrição";
-            this.labelDescrição.Size = new System.Drawing.Size(80, 18);
-            this.labelDescrição.TabIndex = 18;
-            this.labelDescrição.Text = "Descrição";
+            this.comboBoxTarefa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTarefa.FormattingEnabled = true;
+            this.comboBoxTarefa.Location = new System.Drawing.Point(200, 84);
+            this.comboBoxTarefa.Name = "comboBoxTarefa";
+            this.comboBoxTarefa.Size = new System.Drawing.Size(169, 26);
+            this.comboBoxTarefa.TabIndex = 21;
             // 
             // textBoxID
             // 
@@ -130,21 +109,44 @@ namespace UIPrincipal
             this.labelID.TabIndex = 19;
             this.labelID.Text = "ID ";
             // 
-            // comboBoxTarefa
+            // labelDescrição
             // 
-            this.comboBoxTarefa.FormattingEnabled = true;
-            this.comboBoxTarefa.Location = new System.Drawing.Point(200, 84);
-            this.comboBoxTarefa.Name = "comboBoxTarefa";
-            this.comboBoxTarefa.Size = new System.Drawing.Size(169, 26);
-            this.comboBoxTarefa.TabIndex = 21;
+            this.labelDescrição.AutoSize = true;
+            this.labelDescrição.Location = new System.Drawing.Point(20, 136);
+            this.labelDescrição.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDescrição.Name = "labelDescrição";
+            this.labelDescrição.Size = new System.Drawing.Size(80, 18);
+            this.labelDescrição.TabIndex = 18;
+            this.labelDescrição.Text = "Descrição";
             // 
-            // comboBoxUsuario
+            // textBoxDescrição
             // 
-            this.comboBoxUsuario.FormattingEnabled = true;
-            this.comboBoxUsuario.Location = new System.Drawing.Point(402, 84);
-            this.comboBoxUsuario.Name = "comboBoxUsuario";
-            this.comboBoxUsuario.Size = new System.Drawing.Size(167, 26);
-            this.comboBoxUsuario.TabIndex = 22;
+            this.textBoxDescrição.Location = new System.Drawing.Point(23, 168);
+            this.textBoxDescrição.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDescrição.Multiline = true;
+            this.textBoxDescrição.Name = "textBoxDescrição";
+            this.textBoxDescrição.Size = new System.Drawing.Size(546, 69);
+            this.textBoxDescrição.TabIndex = 17;
+            // 
+            // labelUsuario
+            // 
+            this.labelUsuario.AutoSize = true;
+            this.labelUsuario.Location = new System.Drawing.Point(399, 52);
+            this.labelUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUsuario.Name = "labelUsuario";
+            this.labelUsuario.Size = new System.Drawing.Size(62, 18);
+            this.labelUsuario.TabIndex = 15;
+            this.labelUsuario.Text = "Usuário";
+            // 
+            // labelTarefa
+            // 
+            this.labelTarefa.AutoSize = true;
+            this.labelTarefa.Location = new System.Drawing.Point(197, 52);
+            this.labelTarefa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTarefa.Name = "labelTarefa";
+            this.labelTarefa.Size = new System.Drawing.Size(51, 18);
+            this.labelTarefa.TabIndex = 13;
+            this.labelTarefa.Text = "Tarefa";
             // 
             // buttonSalvar
             // 

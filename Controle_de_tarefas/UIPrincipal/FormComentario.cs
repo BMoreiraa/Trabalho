@@ -2,13 +2,6 @@
 using DAL;
 using MODEL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UIPrincipal
@@ -51,30 +44,32 @@ namespace UIPrincipal
 
         private void retornarUsuario()
         {
-            String vqueryUsuarios = @"SELECT Id, Nome FROM Usuario order by Id";
 
+            Banco banco = new Banco();
             comboBoxUsuario.Items.Clear();
-            comboBoxUsuario.DataSource = Banco.dql(vqueryUsuarios);
+            comboBoxUsuario.DataSource = Banco.dql(banco.vqueryUsuarios);
             comboBoxUsuario.DisplayMember = "Nome";
             comboBoxUsuario.ValueMember = "Id";
 
 
         }
-
-        private void retornarTarefa()
+        private void retornartarefas()
         {
-          String vqueryTarefas = @"SELECT Id, Descricao FROM Usuario order by Id";
+            Banco banco = new Banco();
 
             comboBoxTarefa.Items.Clear();
-            comboBoxTarefa.DataSource = Banco.dql(vqueryTarefas);
-            comboBoxTarefa.DisplayMember = "Descricao";
+            comboBoxTarefa.DataSource = Banco.dql(banco.vqueryTarefas);
+            comboBoxTarefa.DisplayMember = "Descriçao";
             comboBoxTarefa.ValueMember = "Id";
+
         }
+
+
 
         private void FormComentario_Load(object sender, EventArgs e)
         {
             retornarUsuario();
-            retornarTarefa();
+            retornartarefas();
         }
 
     }
