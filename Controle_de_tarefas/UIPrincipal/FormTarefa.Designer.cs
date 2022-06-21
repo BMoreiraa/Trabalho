@@ -159,6 +159,7 @@ namespace UIPrincipal
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Fuchsia;
             this.label1.Location = new System.Drawing.Point(182, 9);
@@ -182,6 +183,9 @@ namespace UIPrincipal
             this.Controls.Add(this.tarefaDataGridView);
             this.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(796, 586);
+            this.MinimumSize = new System.Drawing.Size(796, 586);
             this.Name = "FormTarefa";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

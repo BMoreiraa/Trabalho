@@ -55,7 +55,7 @@ namespace UIPrincipal
             // 
             this.textBoxID.Enabled = false;
             this.textBoxID.Location = new System.Drawing.Point(40, 162);
-            this.textBoxID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxID.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxID.Name = "textBoxID";
             this.textBoxID.Size = new System.Drawing.Size(132, 25);
             this.textBoxID.TabIndex = 9;
@@ -74,7 +74,7 @@ namespace UIPrincipal
             // textBoxDescricao
             // 
             this.textBoxDescricao.Location = new System.Drawing.Point(40, 230);
-            this.textBoxDescricao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDescricao.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDescricao.Multiline = true;
             this.textBoxDescricao.Name = "textBoxDescricao";
             this.textBoxDescricao.Size = new System.Drawing.Size(599, 67);
@@ -107,7 +107,7 @@ namespace UIPrincipal
             this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalvar.ForeColor = System.Drawing.Color.Fuchsia;
             this.buttonSalvar.Location = new System.Drawing.Point(40, 416);
-            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(147, 42);
             this.buttonSalvar.TabIndex = 6;
@@ -118,9 +118,10 @@ namespace UIPrincipal
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("Arial", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Fuchsia;
-            this.label1.Location = new System.Drawing.Point(115, 12);
+            this.label1.Location = new System.Drawing.Point(178, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(378, 72);
@@ -133,7 +134,7 @@ namespace UIPrincipal
             this.comboBoxUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUsuario.FormattingEnabled = true;
             this.comboBoxUsuario.Location = new System.Drawing.Point(219, 162);
-            this.comboBoxUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxUsuario.Name = "comboBoxUsuario";
             this.comboBoxUsuario.Size = new System.Drawing.Size(274, 25);
             this.comboBoxUsuario.TabIndex = 10;
@@ -169,7 +170,7 @@ namespace UIPrincipal
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.label_ID);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CadastroTarefa";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

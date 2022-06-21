@@ -58,6 +58,7 @@ namespace UIPrincipal
             this.panelFundo.Controls.Add(this.LBSenha);
             this.panelFundo.Controls.Add(this.TXTBUsuario);
             this.panelFundo.Controls.Add(this.LBUsuario);
+            this.panelFundo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFundo.Font = new System.Drawing.Font("News706 BT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelFundo.ForeColor = System.Drawing.Color.Black;
             this.panelFundo.Location = new System.Drawing.Point(0, 0);
@@ -80,6 +81,8 @@ namespace UIPrincipal
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.CausesValidation = false;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Fuchsia;
             this.label3.Location = new System.Drawing.Point(71, 25);
@@ -103,6 +106,7 @@ namespace UIPrincipal
             // checkBoxMostraSenha
             // 
             this.checkBoxMostraSenha.AutoSize = true;
+            this.checkBoxMostraSenha.FlatAppearance.BorderSize = 0;
             this.checkBoxMostraSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBoxMostraSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMostraSenha.ForeColor = System.Drawing.Color.Black;
@@ -146,6 +150,7 @@ namespace UIPrincipal
             // TXTBSenha
             // 
             this.TXTBSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TXTBSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXTBSenha.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TXTBSenha.Location = new System.Drawing.Point(49, 250);
             this.TXTBSenha.Name = "TXTBSenha";
@@ -194,11 +199,11 @@ namespace UIPrincipal
             this.ClientSize = new System.Drawing.Size(365, 561);
             this.Controls.Add(this.panelFundo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "TelaLogin";
-            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLongin";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.TopMost = true;
             this.panelFundo.ResumeLayout(false);
             this.panelFundo.PerformLayout();
             this.ResumeLayout(false);

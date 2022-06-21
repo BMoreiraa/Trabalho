@@ -20,7 +20,7 @@ namespace UIPrincipal
             comentario.Id = Convert.ToInt32(textBoxID.Text);
             comentario.Id_Usuario = Convert.ToInt32(comboBoxUsuario.SelectedValue.ToString());
             comentario.Descricao = textBoxDescrição.Text;
-            comentario.Id_tarefa = Convert.ToInt32(comboBoxTarefa.SelectedValue.ToString());
+            
 
             comentarioBLL.Inserir(comentario);
 
@@ -53,23 +53,14 @@ namespace UIPrincipal
 
 
         }
-        private void retornartarefas()
-        {
-            Banco banco = new Banco();
-
-            comboBoxTarefa.Items.Clear();
-            comboBoxTarefa.DataSource = Banco.dql(banco.vqueryTarefas);
-            comboBoxTarefa.DisplayMember = "Descriçao";
-            
-
-        }
+        
 
 
 
         private void FormComentario_Load(object sender, EventArgs e)
         {
             retornarUsuario();
-            retornartarefas();
+            
         }
 
     }
